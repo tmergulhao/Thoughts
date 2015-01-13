@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="WTE-yF-ada">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="SVS-If-OZN">
+            <objects>
+                <viewController id="WTE-yF-ada" customClass="TodayViewController" customModule="A_thought_a_day" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LJL-L6-2Y3"/>
+                        <viewControllerLayoutGuide type="bottom" id="H7o-5u-kKf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="rkd-YG-XG1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIz-PL-3D0">
+                                <rect key="frame" x="16" y="16" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4P-KY-AEK">
+                                <rect key="frame" x="0.0" y="-9" width="320" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3Lb-6P-8TJ"/>
+                                    <constraint firstAttribute="width" constant="320" id="OeH-U4-NNI"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPress" destination="WTE-yF-ada" eventType="touchUpInside" id="4x3-IF-Yfh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="kIz-PL-3D0" firstAttribute="top" secondItem="LJL-L6-2Y3" secondAttribute="bottom" constant="16" id="BdY-f1-kVf"/>
+                            <constraint firstItem="kIz-PL-3D0" firstAttribute="leading" secondItem="rkd-YG-XG1" secondAttribute="leadingMargin" id="IsZ-p6-Udl"/>
+                            <constraint firstAttribute="centerY" secondItem="O4P-KY-AEK" secondAttribute="centerY" id="Lz1-x2-dVe"/>
+                            <constraint firstItem="H7o-5u-kKf" firstAttribute="top" secondItem="kIz-PL-3D0" secondAttribute="bottom" constant="16" id="MaG-Iw-8dj"/>
+                            <constraint firstAttribute="centerX" secondItem="O4P-KY-AEK" secondAttribute="centerX" id="iVB-T2-t9T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kIz-PL-3D0" secondAttribute="trailing" constant="13" id="q5r-g6-5ix"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="53"/>
+                    <connections>
+                        <outlet property="thoughtLabel" destination="kIz-PL-3D0" id="I5s-7g-MwZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDr-cK-QCR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="284"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
